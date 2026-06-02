@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@300;400;500;700;800&display=swap");
+
+:root {
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html,
+body {
+  background: #0a0e1a;
+  color: #e8ecf5;
+  font-family: var(--font-manrope);
+  min-height: 100vh;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at top right, rgba(198, 11, 30, 0.08), transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(255, 196, 0, 0.05), transparent 50%),
+    #0a0e1a;
+}
+
+.font-display { font-family: var(--font-bebas); }
+.font-mono { font-family: var(--font-mono); }
